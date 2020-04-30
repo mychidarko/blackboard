@@ -32,7 +32,7 @@ body {
   border: none;
   color: #fff;
   overflow: hidden;
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 #tempCanvas {
@@ -55,4 +55,9 @@ select {
   font-family: Verdana, Geneva, sans-serif;
   font-size: 12px;
   background-color: #eaeaea;
+}
+.demo-drawing {
+	position: absolute;
+	top: 25%;
+	left: 20%;
 }
