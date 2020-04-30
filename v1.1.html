@@ -13,8 +13,11 @@
         background-color: #f0f0f0;
 	  }
 	  .container {
-		  padding: 3% 8% !important;
-	  }
+      padding: 3% 8% !important;
+    }
+    #blackboard {
+      cursor: crosshair;
+    }
     </style>
   </head>
 
@@ -25,11 +28,11 @@
       <option value="eraser">Eraser</option>
     </select>
     <div class="container">
-		<div id="blackboard" style="background-color: rgb(34, 34, 34); color: white !important;"></div>
-	</div>
+      <div id="blackboard" style="background-color: rgb(34, 34, 34); color: white !important;"></div>
+    </div>
     <script>
-      var width = window.innerWidth;
-      var height = window.innerHeight - 25;
+      var width = window.innerWidth - ((window.innerWidth/100) * 17);
+      var height = window.innerHeight - ((window.innerHeight/100) * 6);
 
       // first we need Konva core things: stage and layer
       var stage = new Konva.Stage({
